@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/c7b99535d001d27f7c371aa9a87818e0/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/anim/catalyst_fade_out.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/47cef704a8b96fbc070a527224339e7d/res/anim/catalyst_fade_out.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/anim/abc_fade_in.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/c7b99535d001d27f7c371aa9a87818e0/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/anim/catalyst_push_up_in.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/47cef704a8b96fbc070a527224339e7d/res/anim/catalyst_push_up_in.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/anim/abc_tooltip_enter.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/c7b99535d001d27f7c371aa9a87818e0/res/anim/abc_tooltip_enter.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/anim/abc_popup_exit.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/c7b99535d001d27f7c371aa9a87818e0/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/anim/catalyst_slide_down.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/47cef704a8b96fbc070a527224339e7d/res/anim/catalyst_slide_down.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/c7b99535d001d27f7c371aa9a87818e0/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/anim/abc_slide_out_top.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/c7b99535d001d27f7c371aa9a87818e0/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/anim/abc_fade_out.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/c7b99535d001d27f7c371aa9a87818e0/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/anim/abc_popup_enter.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/c7b99535d001d27f7c371aa9a87818e0/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/c7b99535d001d27f7c371aa9a87818e0/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/anim/abc_tooltip_exit.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/c7b99535d001d27f7c371aa9a87818e0/res/anim/abc_tooltip_exit.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/anim/abc_slide_in_top.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/c7b99535d001d27f7c371aa9a87818e0/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/anim/catalyst_slide_up.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/47cef704a8b96fbc070a527224339e7d/res/anim/catalyst_slide_up.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/anim/catalyst_push_up_out.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/47cef704a8b96fbc070a527224339e7d/res/anim/catalyst_push_up_out.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/anim/catalyst_fade_in.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/47cef704a8b96fbc070a527224339e7d/res/anim/catalyst_fade_in.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/c7b99535d001d27f7c371aa9a87818e0/res/anim/abc_grow_fade_in_from_bottom.xml"
+    }
+]

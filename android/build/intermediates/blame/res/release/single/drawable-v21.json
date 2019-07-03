@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/drawable-v21/notification_action_background.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/e0115a5de5cc2652c203d5e405f5f879/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/drawable-v21/abc_dialog_material_background.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/c7b99535d001d27f7c371aa9a87818e0/res/drawable-v21/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/drawable-v21/abc_list_divider_material.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/c7b99535d001d27f7c371aa9a87818e0/res/drawable-v21/abc_list_divider_material.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/c7b99535d001d27f7c371aa9a87818e0/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/c7b99535d001d27f7c371aa9a87818e0/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/c7b99535d001d27f7c371aa9a87818e0/res/drawable-v21/abc_btn_colored_material.xml"
+    }
+]

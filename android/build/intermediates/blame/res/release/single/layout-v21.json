@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/e0115a5de5cc2652c203d5e405f5f879/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/e0115a5de5cc2652c203d5e405f5f879/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/layout-v21/notification_action.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/e0115a5de5cc2652c203d5e405f5f879/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/theaidem/work/projects/iLike/node_modules/react-native-webim/android/build/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/theaidem/.gradle/caches/transforms-2/files-2.1/e0115a5de5cc2652c203d5e405f5f879/res/layout-v21/notification_template_icon_group.xml"
+    }
+]
