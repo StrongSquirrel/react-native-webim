@@ -1,18 +1,25 @@
 {
-  "name": "react-native-webim",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "react-native"
-  ],
-  "author": "",
-  "license": "",
-  "peerDependencies": {
-    "react-native": "^0.41.2",
-    "react-native-windows": "0.41.0-rc.1"
-  }
+    "name": "react-native-webim",
+    "version": "0.0.2",
+    "description": "Webim integration for React Native",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/StrongSquirrel/react-native-webim"
+    },
+    "license": "MIT",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "react-native",
+        "ios",
+        "android",
+        "webim"
+    ],
+    "author": "Max Kokorin <kokorin.max@gmail.com> (https://github.com/theaidem/)",
+    "peerDependencies": {
+        "react-native": "^0.41.2"
+    },
+    "nativePackage": true
 }
