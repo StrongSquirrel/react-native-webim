@@ -3,10 +3,16 @@ package com.webimapp;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import java.util.List;
-
 import android.app.Activity;
+import android.net.Uri;
+import java.io.File;
+import java.io.InputStream;
+import java.io.IOException;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+import java.util.List;
 import android.util.Log;
+import android.webkit.MimeTypeMap;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
@@ -19,6 +25,7 @@ import com.facebook.react.modules.core.DeviceEventManagerModule;
 
 import com.webimapp.android.sdk.Webim;
 import com.webimapp.android.sdk.WebimLog;
+import com.webimapp.android.sdk.WebimError;
 import com.webimapp.android.sdk.WebimSession;
 import com.webimapp.android.sdk.MessageStream;
 import com.webimapp.android.sdk.MessageTracker;
@@ -69,6 +76,7 @@ public class RNWebimModule extends ReactContextBaseJavaModule {
     }
 
     private void sendEvent(String eventName, @Nullable String payload) {
+        Log.i("WEBIM EVT", eventName + " invoked");
         this.reactContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit(eventName, payload);
     }
 
@@ -96,11 +104,13 @@ public class RNWebimModule extends ReactContextBaseJavaModule {
 
             @Override
             public void messageChanged(@NonNull Message from, @NonNull Message to) {
+                sendEvent("messageChanged", new Gson().toJson(to));
                 return;
             }
 
             @Override
             public void allMessagesRemoved() {
+                sendEvent("allMessagesRemoved", "");
                 return;
             }
         });
@@ -144,6 +154,65 @@ public class RNWebimModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void sendMessage(String message) {
         stream.sendMessage(message);
+    }
+
+    @ReactMethod
+    public void sendFile(@NonNull String path, final Promise promise) {
+
+        Uri uri = Uri.parse(path);
+        String mime = getCurrentActivity().getContentResolver().getType(uri);
+        String extension = mime == null ? null : MimeTypeMap.getSingleton().getExtensionFromMimeType(mime);
+        String name = extension == null ? null : uri.getLastPathSegment() + "." + extension;
+        File file = null;
+
+        try {
+            InputStream inp = getCurrentActivity().getContentResolver().openInputStream(uri);
+            if (inp == null) {
+                file = null;
+            } else {
+                file = File.createTempFile("webim", extension, getCurrentActivity().getCacheDir());
+                writeFully(file, inp);
+            }
+        } catch (IOException e) {
+            Log.e("WEBIM", "failed to copy selected file", e);
+            file.delete();
+            file = null;
+            promise.reject(e.getMessage());
+        }
+
+        stream.sendFile(file, name, mime, new MessageStream.SendFileCallback() {
+            @Override
+            public void onProgress(@NonNull Message.Id id, long sentBytes) {
+                Log.i("WEBIM sendFile onProgress", new Gson().toJson(id));
+            }
+
+            @Override
+            public void onSuccess(@NonNull Message.Id id) {
+                promise.resolve(new Gson().toJson(id));
+            }
+
+            @Override
+            public void onFailure(@NonNull Message.Id id, @NonNull WebimError<SendFileError> error) {
+                promise.reject(error.getErrorString());
+            }
+        });
+
+    }
+
+    private static void writeFully(@NonNull File to, @NonNull InputStream from) throws IOException {
+        byte[] buffer = new byte[4096];
+        OutputStream out = null;
+        try {
+            out = new FileOutputStream(to);
+            for (int read; (read = from.read(buffer)) != -1;) {
+                out.write(buffer, 0, read);
+            }
+        } finally {
+            from.close();
+            if (out != null) {
+                out.close();
+            }
+        }
     }
 
 }
