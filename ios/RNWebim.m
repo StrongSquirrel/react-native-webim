@@ -1,5 +1,13 @@
+#import "RNWebim.h"
+#import <React/RCTLog.h>
 
-#import "React/RCTBridgeModule.h"
+@implementation RNWebim
 
-@interface RCT_EXTERN_MODULE(RNWebim, NSObject)
+    RCT_EXPORT_MODULE();
+
+    RCT_EXPORT_METHOD(init:(NSString *)name)
+    {
+        RCTLogInfo(@"Pretending %@ ", name);
+    }
+
 @end

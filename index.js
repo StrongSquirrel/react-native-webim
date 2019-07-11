@@ -1,5 +1,5 @@
 import { NativeModules } from "react-native"
 
 const { RNWebim } = NativeModules
-console.log("RAAN")
+console.log("RUN", RNWebim)
 export default RNWebim
