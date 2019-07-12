@@ -7,12 +7,14 @@ Pod::Spec.new do |s|
     s.version      = package['version']
     s.summary      = package['description']
     s.license      = package['license']
-    s.authors      = package['author']
     s.homepage     = package['repository']['url']
-    s.platform     = :ios, "7.0"
-    s.source       = { :git => "https://github.com/StrongSquirrel/react-native-webim.git", :tag => "master" }
-    s.source_files  = "ios/**/*.{h,m}"
+    s.authors = package['author'] || "StrSqr"
+    s.summary = package['description']
+    s.source = { git: package['repository']['url'] }
+    s.source_files = "ios/*.{h,m}"
+    s.platform = :ios, "9.0"
     s.requires_arc = true
+    s.preserve_paths = 'LICENSE', 'README.md', 'package.json', 'index.js'
 
     s.dependency "React"
     s.dependency "WebimClientLibrary"
