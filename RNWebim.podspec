@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.authors = package['author'] || "StrSqr"
     s.summary = package['description']
     s.source = { git: package['repository']['url'] }
-    s.source_files = "ios/*.{h,m}"
+    s.source_files = "ios/**/*.{h,m}"
     s.platform = :ios, "9.0"
     s.requires_arc = true
     s.preserve_paths = 'LICENSE', 'README.md', 'package.json', 'index.js'
